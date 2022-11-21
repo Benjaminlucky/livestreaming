@@ -1,0 +1,66 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+//GENERAL STYLES////////////////////////////////////////// 
+body{
+    background: $body-bg;
+    overflow-x: hidden!important;
+    width: 100%;
+}
+
+*{
+    a{
+        text-decoration: none;
+    }
+}
+///////////////////////// GENERAL STYLES ENDS HERE
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: $whiteSmoke;
+    width: $container-fullWidth;
+    height: 2rem;
+
+    .headerSection{
+        display: flex;
+        justify-content: space-between;
+        width: $container-lg;
+
+
+        .headerLeft{
+            display: flex;
+            justify-content: flex-start;
+            
+            .headerLink{
+                margin: 0 1rem;
+            }
+        }
+
+        .headerRight{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+}
+
+
+
+
+h1{
+    color: #1fea74;
+    font-weight: bolder;
+
+   &:hover{
+        color: #000;
+    }
+}
